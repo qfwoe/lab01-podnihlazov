@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <meta property="og:image" content="img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Головна сторінка сайту присвячена методологіям розробки програмного забезпечення.">
+    <meta name="author" content="Леонід Поднiглазов">
+    <title>Головна — Методології розробки ПЗ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- Шаг 1: Добавили класс page к body для активации Grid-сетки -->
+<body class="page">
+    <a href="#main-content" style="position: absolute; left: -9999px; z-index: 999; padding: 1em; background: #fff; color: #000;" onfocus="this.style.left='0';">Перейти до основного вмісту</a>
+
+<!-- Шаг 2: Добавили класс page__header для позиционирования шапки -->
+<header class="hero page__header">
+    <a href="index.html" class="site-title">Методологія розробки ПЗ</a>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html" aria-current="page">Головна</a></li>
+            <li><a href="about.html">Про напрям</a></li>
+            <li><a href="pages/resources.html">Ресурси</a></li>
+            <li><a href="comparison.html">Порівняння</a></li>
+            <li><a href="schedule.html">Розклад</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li class="menu__contacts"><a href="contacts.html">Контакти</a></li>
+            <li><a href="application.html">Заявка</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Шаг 3: Вставили саму боковую панель -->
+    <aside class="page__sidebar">
+        <h3>Швидка навігація</h3>
+        <ul class="classification-list">
+            <li>Методології:</li>
+            <li><a href="#faq">Часті питання</a></li>
+            <li><a href="comparison.html">Таблиця фреймворків</a></li>
+            <li><a href="https://agilemanifesto.org/" target="_blank" rel="noopener">Agile Manifesto ↗</a></li>
+        </ul>
+    </aside>
+
+    <!-- Шаг 4: Заменили класс container на page__main, чтобы контент встал в сетку -->
+    <main id="main-content" class="page__main">
+     <section class="card">  <h1>Методології розробки програмного забезпечення</h1>
+        <p>Ласкаво просимо на освітній портал, присвячений сучасним підходам, життєвим циклам, методологіям та фреймворкам створення якісного програмного забезпечення. Тут ви знайдете детальну інформацію про організацію командної роботи та управління проєктами.
+        </p>
+     </section>
+        
+        <!-- Блок показників (Статистика) -->
+        <div class="stats">
+            <div class="stats_item">12 методологій</div>
+            <div class="stats_item">5 фреймворків</div>
+            <div class="stats_item">25 джерел</div>
+            <div class="stats_item">5 розділів</div>
+        </div>
+
+        <section class="card">
+            <h2>Проєктний менеджмент у світі IT</h2>
+            <p>Ефективна розробка програмного забезпечення неможлива без чіткого розуміння процесів планування, оцінки ризиків та ітеративної поставки готового продукту. Вибір правильної методології є критичним чинником успіху будь-якого цифрового продукту.</p>
+        </section>
+
+        <section class="card">
+            <h2>Основні розділи сайту</h2>
+            <ul>
+                <li><strong>Головна:</strong> загальний огляд та вступна інформація.</li>
+                <li><strong>Про напрям:</strong> фундаментальні засади та цінність методологій.</li>
+                <li><strong>Ресурси:</strong> корисні матеріали, офіційні посібники та маніфести.</li>
+                <li><strong>Порівняння:</strong> детальний аналіз та таблиці характеристик популярних фреймворків.</li>
+                <li><strong>Розклад:</strong> розклад занять групи на тиждень.</li>
+            </ul>
+        </section>
+
+        <section id="faq" class="card">
+             <span class="badge">Нове</span>
+            <h2>Часті питання (FAQ)</h2>
+            
+            <details>
+                <summary>Як обрати відповідну методологію для проєкту?</summary>
+                <p>Вибір методології залежить від гнучкості вимог, рівня невизначеності, розміру команди та наявності постійного зворотного зв'язку від замовника. Для фіксованих вимог краще підходить Waterfall, а для динамічних продуктів — Agile або Scrum.</p>
+            </details>
+
+            <details>
+                <summary>Чим відрізначається Scrum від Kanban?</summary>
+                <p>Scrum використовує фіксовані за часом ітерації (спринти) та чітко визначені ролі (Scrum Master, Product Owner, команда). Kanban базується на безперервному потоці завдань і візуалізації обмежень одночасної роботи (WIP limits) без жорстких спринтів.</p>
+            </details>
+
+            <details>
+                <summary>Де можна детальніше ознайомитися з принципами Agile?</summary>
+                <p>Основоположні принципи та цінності описані на офіційному ресурсі — <a href="https://agilemanifesto.org/" target="_blank" rel="noopener" class="btn">Маніфест Agile</a>.</p>
+            </details>
+        </section>
+    </main>
+
+   <!-- Шаг 5: Добавили класс page__footer для подвала -->
+   <footer class="site-footer page__footer">
+        <address>
+            Леонід Поднiглазов, група КН-21Б<br>
+            <a href="mailto:student@onua.edu.ua">student@onua.edu.ua</a><br>
+            <a href="tel:+380487195900">+38 (048) 719-59-00</a>
+        </address>
+        <p>&copy; 2026 Леонід Поднiглазов</p>
+    </footer>
+
+    <a href="#main-content" class="back-to-top" aria-label="Нагору">↑</a>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <meta property="og:image" content="img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Форма зворотного зв'язку навчального сайту з методологій розробки програмного забезпечення.">
+    <meta name="author" content="Леонід Поднiглазов">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Зворотний зв'язок — Методології розробки ПЗ</title>
+</head>
+<body>
+<header class="hero">
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про напрям</a></li>
+            <li><a href="pages/resources.html">Ресурси</a></li>
+            <li><a href="comparison.html">Порівняння</a></li>
+            <li><a href="schedule.html">Розклад</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="contacts.html" aria-current="page">Контакти</a></li>
+            <li><a href="application.html">Заявка</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="container">
+        <h1>Зворотний зв'язок</h1>
+
+        <form action="https://httpbin.org/post" method="post" class="card">
+            <!-- 1. Явний зв'язок -->
+            <label for="name">Ім'я</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+
+            <!-- 2. Явний зв'язок -->
+            <label for="email">Електронна пошта</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <!-- 3. Явний зв'язок (<select>) -->
+            <label for="subject">Тема звернення</label>
+            <select id="subject" name="subject">
+                <option value="question">Запитання</option>
+                <option value="suggestion">Пропозиція</option>
+                <option value="error">Повідомлення про помилку на сайті</option>
+            </select>
+            <br><br>
+
+            <!-- 4. Явний зв'язок (<textarea>) -->
+            <label for="message">Текст повідомлення</label><br>
+            <textarea id="message" name="message" rows="5" minlength="10" required></textarea>
+            <br><br>
+
+            <!-- 5. Вкладення: label обгортає поле, атрибути for/id не потрібні -->
+            <label>
+                <input type="checkbox" name="consent" required>
+                Погоджуюсь на обробку персональних даних
+            </label>
+            <br><br>
+
+           <button type="submit" class="btn">Надіслати</button>
+        </form>
+    </main>
+
+    <footer>
+        <address>
+            Леонід Поднiглазов, група КН-21Б<br>
+            <a href="mailto:student@onua.edu.ua">student@onua.edu.ua</a><br>
+            <a href="tel:+380487195900">+38 (048) 719-59-00</a>
+        </address>
+        <p>&copy; 2026 Леонід Поднiглазов</p>
+    </footer>
+</body>
+</html>

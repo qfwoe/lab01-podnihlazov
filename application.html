@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <meta property="og:image" content="img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Форма подання заявки на участь у навчальному проєкті з методологій розробки ПЗ.">
+    <meta name="author" content="Леонід Поднiглазов">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Заявка на участь — Методології розробки ПЗ</title>
+</head>
+<body>
+<header class="hero">
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про напрям</a></li>
+            <li><a href="pages/resources.html">Ресурси</a></li>
+            <li><a href="comparison.html">Порівняння</a></li>
+            <li><a href="schedule.html">Розклад</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="application.html" aria-current="page">Заявка</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="container">
+        <div class="media">
+    <span class="media__icon" aria-hidden="true">ⓘ</span>
+    <p class="media__body">
+        Підказка: оцініть складність алгоритму перед реалізацією.
+    </p>
+</div>
+        <h1>Заявка на участь у проєкті</h1>
+
+        <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+            
+            <!-- 1. Відомості про учасника -->
+            <fieldset>
+                <legend>Відомості про учасника</legend>
+                
+                <label for="fullname">Прізвище та ім'я</label>
+                <input type="text" id="fullname" name="fullname" minlength="5" maxlength="100" autocomplete="name" required placeholder="Іван Петренко">
+                <br><br>
+
+                <label for="email">Електронна пошта</label>
+                <input type="email" id="email" name="email" autocomplete="email" required placeholder="ivan@example.com">
+                <br><br>
+
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" name="phone" 
+                       pattern="\+380[0-9]{9}" 
+                       title="Формат: +380671234567" 
+                       autocomplete="tel"
+                       required placeholder="+380671234567">
+                <br><br>
+
+                <label for="course">Курс навчання</label>
+                <input type="number" id="course" name="course" min="1" max="4" step="1" required value="2">
+            </fieldset>
+            <br>
+
+            <!-- 2. Рівень підготовки -->
+            <fieldset>
+                <legend>Рівень підготовки</legend>
+                <label><input type="radio" name="level" value="junior" checked> Початковий</label><br>
+                <label><input type="radio" name="level" value="middle"> Середній</label><br>
+                <label><input type="radio" name="level" value="senior"> Просунутий</label>
+            </fieldset>
+            <br>
+
+            <!-- 3. Параметри проєкту -->
+            <fieldset>
+                <legend>Параметри проєкту</legend>
+                
+                <label for="start-date">Дата початку участі</label>
+                <input type="date" id="start-date" name="startdate" min="2026-09-15" required>
+                <br><br>
+
+                <label for="stack">Технологічний стек</label>
+                <select id="stack" name="stack" required>
+                    <optgroup label="Мови програмування">
+                        <option value="python">Python</option>
+                        <option value="cpp">C++</option>
+                        <option value="java">Java</option>
+                    </optgroup>
+                    <optgroup label="Клієнтські технології">
+                        <option value="js">JavaScript</option>
+                    </optgroup>
+                </select>
+                <br><br>
+
+                <p>Напрями інтересу:</p>
+                <label><input type="checkbox" name="interests" value="sorting"> Алгоритми сортування</label><br>
+                <label><input type="checkbox" name="interests" value="searching"> Алгоритми пошуку</label><br>
+                <label><input type="checkbox" name="interests" value="graphs"> Графи</label><br>
+                <label><input type="checkbox" name="interests" value="trees"> Дерева та структури даних</label>
+            </fieldset>
+            <br>
+
+            <!-- 4. Додаткові дані -->
+            <fieldset>
+                <legend>Додаткові дані</legend>
+                
+                <label for="experience">Короткий опис досвіду</label><br>
+                <textarea id="experience" name="experience" rows="5" minlength="20" maxlength="500" required placeholder="Розкажіть коротко про свій досвід у програмуванні..."></textarea>
+                <br><br>
+
+                <label for="portfolio">Файл із портфоліо (необов'язково)</label>
+                <input type="file" id="portfolio" name="portfolio" accept=".pdf,.doc,.docx">
+            </fieldset>
+            <br>
+
+            <button type="submit">Надіслати заявку</button>
+            <button type="reset">Очистити</button>
+        </form>
+    </main>
+
+    <footer>
+        <address>
+            Леонід Поднiглазов, група КН-21Б<br>
+            <a href="mailto:student@onua.edu.ua">student@onua.edu.ua</a><br>
+            <a href="tel:+380487195900">+38 (048) 719-59-00</a>
+        </address>
+        <p>&copy; 2026 Леонід Поднiглазов</p>
+    </footer>
+</body>
+</html>

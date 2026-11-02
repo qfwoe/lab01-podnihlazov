@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <meta property="og:image" content="img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Медіагалерея навчального сайту з методологій розробки програмного забезпечення.">
+    <meta name="author" content="Леонід Поднiглазов">
+    <title>Медіагалерея — Методології розробки ПЗ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page">
+
+    <a href="#main-content"
+       style="position: absolute; left: -9999px; z-index: 999; padding: 1em; background: #fff; color: #000;"
+       onfocus="this.style.left='0';">
+        Перейти до основного вмісту
+    </a>
+
+    <!-- Шапка сайту -->
+    <header class="hero page__header">
+        <a href="index.html" class="site-title">
+            Методологія розробки ПЗ
+        </a>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про напрям</a></li>
+                <li><a href="pages/resources.html">Ресурси</a></li>
+                <li><a href="comparison.html">Порівняння</a></li>
+                <li><a href="schedule.html">Розклад</a></li>
+                <li><a href="gallery.html" aria-current="page">Галерея</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+                <li><a href="application.html">Заявка</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="page__sidebar">
+        <h2>Розділи сайту</h2>
+
+        <ul class="classification-list">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про напрям</a></li>
+            <li><a href="pages/resources.html">Ресурси</a></li>
+            <li><a href="comparison.html">Порівняння</a></li>
+            <li><a href="schedule.html">Розклад</a></li>
+            <li><a href="gallery.html" aria-current="page">Галерея</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="application.html">Заявка</a></li>
+        </ul>
+    </aside>
+
+    <!-- Основний вміст -->
+    <main id="main-content" class="page__main container">
+
+        <h1>Медіагалерея</h1>
+
+        <!-- Векторна графіка -->
+        <section class="card">
+            <h2>Векторна графіка</h2>
+
+            <figure>
+                <img src="img/icon.svg"
+                     alt="Піктограма файлу коду"
+                     width="64"
+                     height="64">
+
+                <figcaption>
+                    Векторна піктограма (SVG), яка масштабується без втрати якості та має мінімальний обсяг файлу.
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- Секція растрових зображень -->
+        <section class="card">
+            <h2>Ілюстрації до теми</h2>
+
+            <div class="card-grid">
+
+                <article class="card">
+                    <picture>
+                        <source srcset="img/photo-1.webp" type="image/webp">
+
+                        <img src="img/photo-1.jpg"
+                             alt="Робоче місце з відкритим кодом на екрані монітора"
+                             width="600"
+                             height="400">
+                    </picture>
+
+                    <h3>Робоче місце розробника</h3>
+
+                    <p>
+                        Приклад організації робочого простору програміста.
+                    </p>
+
+                    <p>
+                        <small>Автор: Julia M Cameron, Unsplash License</small>
+                    </p>
+                </article>
+
+                <article class="card">
+                    <img src="img/photo-2.jpg"
+                         alt="Код програми на екрані монітора у темній темі редактора"
+                         width="600"
+                         height="400"
+                         loading="lazy"
+                         decoding="async">
+
+                    <h3>Програмний код</h3>
+
+                    <p>
+                        Написання та редагування програмного коду.
+                    </p>
+
+                    <p>
+                        <small>Автор: Christopher Gower, Unsplash License</small>
+                    </p>
+                </article>
+
+                <article class="card">
+                    <img src="img/photo-3.jpg"
+                         alt="Архітектурні нотатки та схеми на папері біля ноутбука"
+                         width="600"
+                         height="400"
+                         loading="lazy"
+                         decoding="async">
+
+                    <h3>Проєктування систем</h3>
+
+                    <p>
+                        Планування архітектури програмного забезпечення.
+                    </p>
+
+                    <p>
+                        <small>Автор: Scott Graham, Unsplash License</small>
+                    </p>
+                </article>
+
+                <article class="card">
+                    <img src="img/photo-4.jpg"
+                         alt=""
+                         width="600"
+                         height="400"
+                         loading="lazy"
+                         decoding="async">
+
+                    <h3>Технічна інфраструктура</h3>
+
+                    <p>
+                        Декоративна ілюстрація телекомунікаційного обладнання.
+                    </p>
+
+                    <p>
+                        <small>Автор: Taylor Vick, Unsplash License</small>
+                    </p>
+                </article>
+
+                <article class="card">
+                    <img src="img/photo-5.jpg"
+                         alt="Схема етапів планування проєкту на дошці зі стікерами"
+                         width="600"
+                         height="400"
+                         loading="lazy"
+                         decoding="async">
+
+                    <h3>Планування проєкту</h3>
+
+                    <p>
+                        Розподіл завдань, визначення пріоритетів і візуалізація процесів.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <a href="pages/resources.html">
+                        <img src="img/photo-6.jpg"
+                             alt="Перейти до розділу Ресурси"
+                             width="600"
+                             height="400"
+                             loading="lazy"
+                             decoding="async">
+                    </a>
+
+                    <h3>Навчальні ресурси</h3>
+
+                    <p>
+                        <a href="pages/resources.html">
+                            Перейти до розділу «Ресурси»
+                        </a>
+                    </p>
+
+                    <p>
+                        <small>Автор: Luca Bravo</small>
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Відео з субтитрами -->
+        <section class="card">
+            <h2>Відео</h2>
+
+            <video controls width="640" preload="metadata">
+                <source src="video/demo.mp4" type="video/mp4">
+
+                <track src="video/demo-uk.vtt"
+                       kind="subtitles"
+                       srclang="uk"
+                       label="Українські субтитри"
+                       default>
+
+                <track src="video/demo-en.vtt"
+                       kind="subtitles"
+                       srclang="en"
+                       label="English subtitles">
+
+                Ваш браузер не підтримує відтворення відео.
+
+                <a href="video/demo.mp4">Завантажити файл</a>
+            </video>
+        </section>
+
+        <!-- Вбудована карта -->
+        <section class="card">
+            <h2>Розташування</h2>
+
+            <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=30.72,46.47,30.76,46.50&amp;layer=mapnik"
+                width="600"
+                height="400"
+                title="Карта розташування закладу освіти"
+                loading="lazy"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </section>
+
+        <!-- SVG-діаграма -->
+        <section class="card">
+            <h2>Статистика використання методологій (SVG-діаграма)</h2>
+
+            <figure>
+                <svg
+                    width="500"
+                    height="300"
+                    viewBox="0 0 500 300"
+                    role="img"
+                    aria-labelledby="svg-title svg-desc"
+                    style="background: #f9f9f9; border: 1px solid #ddd; max-width: 100%; height: auto;">
+
+                    <title id="svg-title">
+                        Діаграма популярності методологій розробки
+                    </title>
+
+                    <desc id="svg-desc">
+                        Гістограма показує відсоток використання методологій:
+                        Agile — 65%, Scrum — 50%, Kanban — 35%, Waterfall — 20%.
+                    </desc>
+
+                    <!-- Осі координат -->
+                    <line x1="50" y1="250" x2="450" y2="250"
+                          stroke="#333" stroke-width="2" />
+
+                    <line x1="50" y1="50" x2="50" y2="250"
+                          stroke="#333" stroke-width="2" />
+
+                    <!-- Agile -->
+                    <rect x="80" y="120" width="60" height="130" fill="#1f3864" />
+                    <text x="110" y="110" text-anchor="middle" font-size="12" fill="#333">65%</text>
+                    <text x="110" y="270" text-anchor="middle" font-size="12" fill="#333">Agile</text>
+
+                    <!-- Scrum -->
+                    <rect x="170" y="150" width="60" height="100" fill="#2e5b88" />
+                    <text x="200" y="140" text-anchor="middle" font-size="12" fill="#333">50%</text>
+                    <text x="200" y="270" text-anchor="middle" font-size="12" fill="#333">Scrum</text>
+
+                    <!-- Kanban -->
+                    <rect x="260" y="180" width="60" height="70" fill="#4a7c59" />
+                    <text x="290" y="170" text-anchor="middle" font-size="12" fill="#333">35%</text>
+                    <text x="290" y="270" text-anchor="middle" font-size="12" fill="#333">Kanban</text>
+
+                    <!-- Waterfall -->
+                    <rect x="350" y="210" width="60" height="40" fill="#c0392b" />
+                    <text x="380" y="200" text-anchor="middle" font-size="12" fill="#333">20%</text>
+                    <text x="380" y="270" text-anchor="middle" font-size="12" fill="#333">Waterfall</text>
+
+                </svg>
+
+                <figcaption>
+                    SVG-діаграма з підтримкою доступності (ARIA-атрибути та текстовий опис).
+                </figcaption>
+            </figure>
+        </section>
+
+    </main>
+
+    <!-- Підвал -->
+    <footer class="site-footer page__footer">
+        <address>
+            Леонід Поднiглазов, група КН-21Б<br>
+
+            <a href="mailto:student@onua.edu.ua">
+                student@onua.edu.ua
+            </a>
+            <br>
+
+            <a href="tel:+380487195900">
+                +38 (048) 719-59-00
+            </a>
+        </address>
+
+        <p>&copy; 2026 Леонід Поднiглазов</p>
+    </footer>
+
+    <!-- Кнопка нагору -->
+    <a href="#main-content"
+       class="back-to-top"
+       aria-label="Нагору">
+        ↑
+    </a>
+
+</body>
+</html>
